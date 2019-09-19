@@ -29,7 +29,7 @@ Run .exe in dict
 <h2>About txt/gif file</h2>
 <font size = 3>
 <ul>
-    <li>language.txtr: 存储提交的语言, 1->C++, 2->G++</li>
+    <li>language.txtr: 存储提交的语言, 1->C++, 3->G++</li>
     <li>num_to_show_model.txt: 打开Algorithm后显示的数量</li>
     <li>password.txt: 记录用户信息(暗文)</li>
     <li>img.gif: 封面图片, 可以用一个大小相同(700x200)的gif代替(文件名保持一致)</li>
