@@ -4,10 +4,10 @@
 <font size = 3>
 &nbsp;&nbsp;&nbsp; Noj_submitter is a submiiter for noj.cn.  
 
+![img](https://raw.githubusercontent.com/Anlarry/Noj_submitter/master/RealseNote/over_view.png)
+
 你可以通过Noj_submitter向noj.cn提交代码，或者查看题目。
 </font>
-
-<img src = "over_view.png" width="438" height = "345"></img>
 
 <h2>Usage</h2>
 <font size = 3>
@@ -22,11 +22,6 @@
 
 Run .exe in dict  
 <!-- <iframe height=438 width=345 src="demo.mp4"></iframe> -->
-
-<video width="438" height="345" controls>
-  <source src="demo.mp4" type="video/mp4">
-  <!-- <source src="movie.ogg" type="video/ogg"> -->
-</video> 
 
 </font>
 
