@@ -4,7 +4,7 @@
 <font size = 3>
 &nbsp;&nbsp;&nbsp; Noj_submitter is a submiiter for noj.cn.  
 
-![img](https://raw.githubusercontent.com/Anlarry/Noj_submitter/master/RealseNote/over_view.png)
+<img src = "https://raw.githubusercontent.com/Anlarry/Noj_submitter/master/RealseNote/over_view.png" width="438" height = "345"></img>
 
 你可以通过Noj_submitter向noj.cn提交代码，或者查看题目。
 </font>
