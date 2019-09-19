@@ -21,6 +21,9 @@
 &nbsp;&nbsp;&nbsp; Warning: 因为submitter可能不会检查填入信息的正确性，因此你需要确保输入正确的参数
 
 Run .exe in dict  
+<video width="438" height="345" controls>
+  <source src="https://raw.githubusercontent.com/Anlarry/Noj_submitter/master/RealseNote/demo.mp4" type="video/mp4">
+</video>
 <!-- <iframe height=438 width=345 src="demo.mp4"></iframe> -->
 
 </font>
