@@ -76,3 +76,6 @@ Run .exe in dict
 <li>当前的考试中提交代码通过selenium模拟,使用IEwebdriver</li>
 <rl>
 </font>
+
+<h2>Download</h2>
+[version_1.1](https://github.com/Anlarry/Noj_submitter/blob/master/dist_v1.1.zip)
