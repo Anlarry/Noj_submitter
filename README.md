@@ -1,5 +1,27 @@
 <font size = 6>Noj_submitter</font>
 -------
+<h2>New Version</h2>
+<font size = 3>
+新增功能
+<ul>
+    <li> 提交noj.cn当前的考试中的题目<br/>
+    </li>
+    <li>查看AC过的题目的代码  <br/>
+    </li>
+</ul>
+
+[demo_1](https://github.com/Anlarry/Noj_submitter/blob/master/Noj_submitter_v1.1/demo/cur_contest_demo.mht)  
+[demo_2](https://github.com/Anlarry/Noj_submitter/blob/master/Noj_submitter_v1.1/demo/view_src_demo.mht)
+
+因为使用了IEwebdriver，所以要检查IE浏览器的配置：
+<ul>
+    <li> IE页面的显示比例要为100%  </li>
+    <li>IE选项设置的安全页中，4个区域的启用保护模式的勾选都去掉（或都勾上）</li>
+    <li>IE浏览器为兼容模式</li>
+</ul>
+</font>  
+
+---------
 <h2>Introduce</h2>
 <font size = 3>
 &nbsp;&nbsp;&nbsp; Noj_submitter is a submiiter for noj.cn.  
@@ -31,7 +53,8 @@ Run .exe in dict
 <ul>
     <li>language.txtr: 存储提交的语言, 1->C++, 3->G++</li>
     <li>num_to_show_model.txt: 打开Algorithm后显示的数量</li>
-    <li>password.txt: 记录用户信息(暗文)</li>
+    <li>password.txt: 记录用户信息</li>
+    <li>out_time.txt: 响应超时时间，因为noj.cn不稳定所以默认值设为10s</li>
     <li>img.gif: 封面图片, 可以用一个大小相同(700x200)的gif代替(文件名保持一致)</li>
 </ul>
 </font>
@@ -50,5 +73,6 @@ Run .exe in dict
 <ul>
 <li>submitter通过post和get向noj.cn发送请求实现提交代码、查看测评信息</li>
 <li>submitter'GUI is made by tkinter</li>
+<li>当前的考试中提交代码通过selenium模拟,使用IEwebdriver</li>
 <rl>
 </font>
