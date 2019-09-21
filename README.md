@@ -78,4 +78,5 @@ Run .exe in dict
 </font>
 
 <h2>Download</h2>
+
 [version_1.1](https://github.com/Anlarry/Noj_submitter/blob/master/dist_v1.1.zip)
