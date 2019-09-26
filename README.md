@@ -1,8 +1,15 @@
 <font size = 6>Noj_submitter</font>
 -------
-<h2>New Version</h2>
+<h2>Version 1.2</h2>
 <font size = 3>
-新增功能
+what's new
+<ul>
+    <li> 在noj_submitter中查看错误详情</li>
+</ul>   
+</font>
+
+<h2>Version 1.1</h2>
+<font size = 3>
 <ul>
     <li> 提交noj.cn当前的考试中的题目<br/>
     </li>
