@@ -86,4 +86,4 @@ Run .exe in dict
 
 <h2>Download</h2>
 
-[version_1.1](https://github.com/Anlarry/Noj_submitter/blob/master/dist_v1.1.zip)
+[version_1.2](https://github.com/Anlarry/Noj_submitter/blob/master/dist_v1.2.zip)
