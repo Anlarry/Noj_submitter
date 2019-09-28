@@ -3,6 +3,7 @@ import password, but_cmd
 import  tkinter.messagebox
 from  cur_contest import show_contest
 from view_AcCode import view_ac_code
+from functools import partial
 
 def creat_menu(window, user_var, pd_var):
     "window, user name Entry, password Entry"
@@ -13,7 +14,7 @@ def creat_menu(window, user_var, pd_var):
     user_list = password.get_user() #dict
     for user, _ in user_list.items():
         user_menu.add_command(label=user, command = partial(auto_fill, user, _, user_var, pd_var))
-        #user_menu.add_command(label=user, command=lambda: auto_fill(user, _, user_var, pd_var))
+        # user_menu.add_command(label=user, command=lambda: auto_fill(user, _, user_var, pd_var))
     user_menu.add_separator()
     user_menu.add_command(label="Clear user", command=lambda : clear(user_menu))
 
