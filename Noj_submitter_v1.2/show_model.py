@@ -1,24 +1,29 @@
 import tkinter as tk
 from bs4 import BeautifulSoup
-import requests,re
+import requests
+import re
 from functools import partial
 # from show_problem_window import show_problem
 # import show_problem_window
+
 
 def show_model(url_list):
     window = tk.Tk()
     height = str(len(url_list) * 70)
     size = "500x"+height
-    window.geometry(size)
+    # window.geometry(size)
+    window.minsize(500, 100)
 
     for name, url in url_list:
         tk.Label(window, text="").pack()
-        b = tk.Button(window, text=name, command=partial(enter_model,url), font = 3,height = 1)
+        b = tk.Button(window, text=name, command=partial(
+            enter_model, url), font=3, height=1)
         # w1, w2 = window.winfo_screenwidth(), b.winfo_screenmmwidth()
         b.pack()
-
+    tk.Label(window, text="").pack()
     window.mainloop()
-    return 
+    return
+
 
 def enter_model(url):
     html = requests.get(url).text
@@ -27,7 +32,7 @@ def enter_model(url):
     pro_list = []
     for each in tag:
         pro_id = each.attrs["href"][-5:-1]
-        pro_list.append([each.get_text() ,pro_id])
+        pro_list.append([each.get_text(), pro_id])
     show_problems(pro_list)
     # window = tk.Tk()
     # height = str(len(pro_list) * 75)
@@ -39,23 +44,28 @@ def enter_model(url):
     #     b = tk.Button(window, text=name, command=lambda:show_problem(pro_id),font =3,height=1)
     #     b.pack()
     # window.mainloop()
-    # return 
+    # return
+
 
 def show_problems(pro_list):
     window = tk.Tk()
     height = str(len(pro_list) * 70)
-    window.geometry("500x"+height)
+    # window.geometry("500x"+height)
+    window.minsize(500, 100)
     # print(pro_list)
     for name, pro_id in pro_list:
         # print(name, pro_id)
         tk.Label(window, text="").pack()
         # url = "http://noj.cn/?a=p&p="+str(pro_id)
-        tk.Button(window, text=name, command=partial(show_problem, pro_id), font=3, height=1).pack()
+        tk.Button(window, text=name, command=partial(
+            show_problem, pro_id), font=3, height=1).pack()
+    tk.Label(window, text="").pack()
     window.mainloop()
     return
 
 # def cmd(pro_id):
 #     return lambda : show_model(pro_id)
+
 
 def show_problem(id):
     try:
