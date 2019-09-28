@@ -1,4 +1,4 @@
-import  requests
+import requests
 import tkinter as tk
 import main
 from ui_control import show
@@ -8,11 +8,13 @@ from get_code import get_code
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
-from put_to_board import settext
+from put_to_board import settext, gettext
 import selenium
 
-def submit(s:requests.Session, CID, pro_name_list, user, pd, e_pro, e_file):
+
+def submit(s: requests.Session, CID, pro_name_list, user, pd, e_pro, e_file):
     "post请求出错，换selenium模拟"
+    old_text = gettext()
     pro = str(e_pro.get())
     F = str(e_file.get())
 
@@ -52,7 +54,7 @@ def submit(s:requests.Session, CID, pro_name_list, user, pd, e_pro, e_file):
     driver.find_element_by_name("Source").send_keys(Keys.CONTROL, 'v')
     # src = "3esdgdssgfsdfsdf"
     #慢
-    # driver.find_element_by_name("Source").send_keys(src) 
+    # driver.find_element_by_name("Source").send_keys(src)
     # js = 'document.getElementById("Source").value="'+str(src)+'"'
     # driver.execute_script(js)
 
@@ -63,11 +65,13 @@ def submit(s:requests.Session, CID, pro_name_list, user, pd, e_pro, e_file):
         dialog_box.accept()
         dialog_box = driver.switch_to.alert
         dialog_box.accept()
-        #get state 
+        #get state
     except selenium.common.exceptions.NoAlertPresentException:
         pass
     finally:
-        driver.close()
+        settext(old_text)
+        # driver.close()
+        driver.quit()
         sta_list = get_submit_sta(user)
         show(sta_list)
 
@@ -94,6 +98,8 @@ def submit(s:requests.Session, CID, pro_name_list, user, pd, e_pro, e_file):
     show(sta_list)
     return 
     '''
+
+
 def get_submit_sta(user):
     try:
         '''
