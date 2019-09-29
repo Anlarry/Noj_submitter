@@ -86,5 +86,5 @@ Run .exe in dict
 
 <h2>Download</h2>
 
-[百度云](https://pan.baidu.com/s/1sDLWSIbt4vZRla0YlBROMg)
+[百度云](https://pan.baidu.com/s/1sDLWSIbt4vZRla0YlBROMg)  
 [version_1.2](https://github.com/Anlarry/Noj_submitter/blob/master/dist_v1.2.zip)
